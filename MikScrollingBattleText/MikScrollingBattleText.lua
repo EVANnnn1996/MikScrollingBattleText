@@ -1,4 +1,4 @@
-﻿-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 -- Title: Mik's Scrolling Battle Text
 -- Author: Mik
 -- Maintainer: Athene
@@ -2620,19 +2620,10 @@ function MikSBT.CommandHandler(params)
 
  -- Look for the recognized parameters.
  if (currentParam == "") then
-  -- Check if the load on demand options are not loaded.
-  if (not IsAddOnLoaded(MikSBT.MOD_NAME .. "Options")) then
-   -- Load the on demand options.
-   UIParentLoadAddOn(MikSBT.MOD_NAME .. "Options");
-  end
-
-  -- Make sure the on demand options actually loaded.
-  if (IsAddOnLoaded(MikSBT.MOD_NAME .. "Options")) then
-   -- Make sure the scroll area mover control frame is not shown.
-   if (not MSBTScrollAreaMoverControlFrame:IsShown()) then
-    -- Show the options interface.
-    MSBTFrameOptions:Show();
-   end
+  -- Make sure the scroll area mover control frame is not shown.
+  if (not MSBTScrollAreaMoverControlFrame:IsShown()) then
+   -- Show the options interface.
+   MSBTFrameOptions:Show();
   end
 
   -- Don't show the usage info.

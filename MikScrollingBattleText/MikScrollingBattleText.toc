@@ -20,5 +20,10 @@ localization.lua
 MikTableRecyclerObject.lua
 MikCombatEventHelper.lua
 MikScrollingBattleText.lua
+localization_options.lua
+localization_options-ruRU.lua
+localization_options-zhCN.lua
+MSBTOptions.lua
 MikCombatEventHelper.xml
 MikScrollingBattleText.xml
+MSBTOptions.xml
